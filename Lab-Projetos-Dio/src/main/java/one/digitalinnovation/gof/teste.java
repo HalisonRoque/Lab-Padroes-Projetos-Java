@@ -2,6 +2,7 @@ package one.digitalinnovation.gof;
 
 import one.digitalinnovation.gof.Singleton.SingletonLazy;
 import one.digitalinnovation.gof.Strategy.*;
+import one.digitalinnovation.gof.facade.Facede;
 
 public class teste {
     //Singleton
@@ -25,10 +26,14 @@ public class teste {
 
         robo.setComportamento(defensivo);
         robo.mover();
-        
+
         robo.setComportamento(agressivo);
         robo.mover();
         robo.mover();
         robo.mover();
+
+        //facede
+        Facede facade = new Facede();
+        facade.migrarCliente("halison","58397000");
     }
 }
